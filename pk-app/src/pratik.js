@@ -2,14 +2,20 @@ import React, { Component} from 'react';
 
 class Pratik extends Component{
     render(){
-        //console.log(this.props);
-        const{name, age, belt} = this.props;
-        return(
-            <div className="pratik">
-                <div>Name: {name}</div>
-                <div>Age: {age}</div>
-                <div>Belt: {belt}</div>
+        const {pratik} = this.props;
+        const pratikList = pratik.map(pratik => {
+            return (
+            <div className="pratik" key={pratik.id}>
+                <div>Name: {pratik.name}</div>
+                <div>Age: {pratik.age}</div>
+                <div>Belt: {pratik.belt}</div>
                 <br></br>
+            </div>
+            )
+        })
+        return(
+            <div className="pratik-list">
+                {pratikList}
             </div>
         )
     }
