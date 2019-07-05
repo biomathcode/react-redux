@@ -6,6 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.home .post img {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  opacity: 0.6;
+}
+.home .post{
+  overflow:hidden;
+  padding-left: 80px;
+  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
